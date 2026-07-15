@@ -140,7 +140,7 @@ export default function About() {
             { num: "300+", label: "LeetCode Problems" },
             { num: "4", label: "Research Papers" },
             { num: "2", label: "IEEE Conference Papers" },
-            { num: "8.85", label: "CGPA / 10.0" },
+            { num: "8.94", label: "CGPA / 10.0" },
             { num: "9th", label: "SIH Rank (400+ teams)" },
             { num: "50+", label: "Club Members Led" },
           ].map((s) => (
