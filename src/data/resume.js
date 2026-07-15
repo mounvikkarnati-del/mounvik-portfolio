@@ -15,7 +15,7 @@ export const education = {
   degree: "B.Tech – Computer Science & Engineering",
   institution: "Vellore Institute of Technology – AP, Andhra Pradesh",
   duration: "Sep 2023 – May 2027 (Expected)",
-  cgpa: "8.85 / 10.0",
+  cgpa: "8.94 / 10.0",
 };
 
 export const skills = {
