@@ -43,7 +43,7 @@ export default function Home() {
             {[
               { v: "300+", l: "LeetCode" },
               { v: "4", l: "Papers" },
-              { v: "8.85", l: "CGPA" },
+              { v: "8.94", l: "CGPA" },
             ].map((s) => (
               <div key={s.l}>
                 <div
