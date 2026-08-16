@@ -4,14 +4,12 @@ import { skills } from "../data/resume";
 
 const catColors = {
   Languages: "var(--burnt)",
-  "OOP & System Design": "var(--teal)",
   Frontend: "var(--gold)",
   Backend: "var(--burnt)",
+  Databases: "var(--teal)",
   "DevOps & Cloud": "var(--teal)",
-  "AI/ML": "var(--rust)",
-  GenAI: "var(--burnt)",
-  "Data Analytics & Science": "var(--teal)",
-  Other: "var(--black)",
+  "System Design & Architecture": "var(--gold)",
+  "Core CS": "var(--rust)",
 };
 
 export default function Skills() {
