@@ -75,7 +75,7 @@ export default function Experience() {
           </div>
           <div style={{ fontSize: "0.95rem", color: "#2a2a2a" }}>
             Pursuing B.Tech at VIT-AP (2023–2027) — actively seeking Summer
-            2026 internships in SWE, AI/ML, and Fintech domains.
+            2026 internships in Full Stack Development and Fintech domains.
           </div>
         </div>
       </div>
