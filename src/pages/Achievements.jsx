@@ -55,7 +55,7 @@ export default function Achievements() {
               lineHeight: 1.4,
             }}
           >
-            Targeting Top-Tier Internships in SWE, AI/ML & Fintech for Summer 2026
+            Targeting Top-Tier Internships in Full Stack Development & Fintech
           </div>
           <div
             style={{
