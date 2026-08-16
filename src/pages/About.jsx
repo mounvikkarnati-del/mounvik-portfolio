@@ -23,19 +23,12 @@ export default function About() {
               className="about-bio"
               style={{ color: "#555", fontSize: "0.95rem" }}
             >
-              I thrive at the intersection of{" "}
-              <strong style={{ color: "var(--burnt)" }}>
-                systems engineering
-              </strong>{" "}
-              and{" "}
-              <strong style={{ color: "var(--teal)" }}>
-                AI/ML research
-              </strong>
-              , crafting solutions that are both technically rigorous and
-              practically impactful. Whether it's building event-driven
-              financial platforms, publishing research on multimodal AI, or
-              leading open-source communities — I bring the same attention to
-              quality and performance to everything I do.
+              I'm passionate about building robust, scalable systems that solve real-world problems.
+              My experience spans <strong style={{ color: "var(--burnt)" }}>full-stack web development</strong>,
+              <strong style={{ color: "var(--teal)" }}> backend architecture</strong>, and distributed systems.
+              I thrive on writing clean, maintainable code and collaborating with teams to ship high-quality products.
+              From React frontends to Node.js/Spring Boot backends, I bring the same attention to performance,
+              reliability, and engineering excellence to every project.
             </p>
 
             <div style={{ marginTop: "2rem", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
@@ -91,7 +84,7 @@ export default function About() {
                 { label: "Location", value: "Hyderabad, India" },
                 { label: "Email", value: personal.email },
                 { label: "Phone", value: personal.phone },
-                { label: "Status", value: "Open to Internships & Research" },
+                { label: "Status", value: "Open to Internships" },
               ].map((item, i) => (
                 <div
                   key={i}
@@ -137,9 +130,9 @@ export default function About() {
         {/* Stats row */}
         <div className="stats-row">
           {[
-            { num: "300+", label: "LeetCode Problems" },
-            { num: "4", label: "Research Papers" },
-            { num: "2", label: "IEEE Conference Papers" },
+            { num: "300+", label: "DSA Problems" },
+            { num: "5+", label: "Full-Stack Projects" },
+            { num: "2", label: "Internships" },
             { num: "8.94", label: "CGPA / 10.0" },
             { num: "9th", label: "SIH Rank (400+ teams)" },
             { num: "50+", label: "Club Members Led" },
