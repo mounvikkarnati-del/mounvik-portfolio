@@ -41,8 +41,8 @@ export default function Home() {
             }}
           >
             {[
-              { v: "300+", l: "LeetCode" },
-              { v: "4", l: "Papers" },
+              { v: "300+", l: "DSA" },
+              { v: "5+", l: "Projects" },
               { v: "8.94", l: "CGPA" },
             ].map((s) => (
               <div key={s.l}>
@@ -150,9 +150,8 @@ export default function Home() {
           { to: "/skills", label: "02 / Skills" },
           { to: "/experience", label: "03 / Experience" },
           { to: "/projects", label: "04 / Projects" },
-          { to: "/research", label: "05 / Research" },
-          { to: "/achievements", label: "06 / Awards" },
-          { to: "/contact", label: "07 / Contact" },
+                              { to: "/achievements", label: "05 / Awards" },
+          { to: "/contact", label: "06 / Contact" },
         ].map((item) => (
           <Link
             key={item.to}
