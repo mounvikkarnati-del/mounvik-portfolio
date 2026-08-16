@@ -7,7 +7,6 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
-import Research from "./pages/Research";
 import OpenSource from "./pages/OpenSource";
 import Certifications from "./pages/Certifications";
 import Achievements from "./pages/Achievements";
@@ -30,7 +29,6 @@ function AppContent() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/research" element={<Research />} />
         <Route path="/open-source" element={<OpenSource />} />
         <Route path="/certifications" element={<Certifications />} />
         <Route path="/achievements" element={<Achievements />} />
