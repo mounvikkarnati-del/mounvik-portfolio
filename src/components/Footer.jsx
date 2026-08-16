@@ -1,9 +1,9 @@
 import { personal } from "../data/resume";
 
 const marqueeItems = [
-  "Software Engineer", "AI/ML Researcher", "Full Stack Dev",
-  "Distributed Systems", "Open Source Contributor", "IEEE Author",
-  "VIT-AP", "AWS Certified", "CCNA Certified", "300+ LeetCode",
+  "Full Stack Developer", "Backend Engineer", "Frontend Developer",
+  "Distributed Systems", "Open Source Contributor", "AWS Certified",
+  "VIT-AP", "Software Engineer", "CCNA Certified", "300+ DSA",
 ];
 
 export default function Footer() {
