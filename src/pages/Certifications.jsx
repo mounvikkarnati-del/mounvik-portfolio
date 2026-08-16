@@ -1,101 +1,81 @@
 import Footer from "../components/Footer";
-import { certifications } from "../data/resume";
+import { experience } from "../data/resume";
 
-const issuers = {
-  Cisco: "#1BA0D7",
-  "Cisco Networking Academy": "#1BA0D7",
-  "Amazon Web Services": "#FF9900",
-};
-
-export default function Certifications() {
+export default function Experience() {
   return (
     <div className="page page-fade">
       <div className="inner">
         <div className="section-header">
           <div>
-            <div className="section-tag">Credentials</div>
-            <h2 className="section-title">Certifications</h2>
+            <div className="section-tag">Work History</div>
+            <h2 className="section-title">Experience</h2>
           </div>
         </div>
 
-        <div className="certs-grid">
-          {certifications.map((cert, i) => (
-            <div className="cert-card" key={i}>
-              <div className="cert-header">
-                <div className="cert-issuer">{cert.issuer}</div>
-                <div className="cert-name">{cert.name}</div>
+        {experience.map((exp, i) => (
+          <div className="exp-card" key={i}>
+            <div className="exp-header">
+              <div>
+                <div className="exp-role">{exp.role}</div>
+                <div className="exp-company">
+                  <a
+                    href={exp.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: "underline", textDecorationColor: "rgba(255,206,27,0.4)" }}
+                  >
+                    {exp.company} ↗
+                  </a>
+                </div>
               </div>
-              <ul className="cert-body">
-                {cert.points.map((p, j) => (
+              <div className="exp-meta">
+                <div className="exp-duration">{exp.duration}</div>
+                <div className="exp-location">{exp.location}</div>
+              </div>
+            </div>
+            <div className="exp-body">
+              <ul className="exp-points">
+                {exp.points.map((p, j) => (
                   <li key={j}>{p}</li>
                 ))}
               </ul>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
 
-        {/* Summary bar */}
+        {/* Timeline note */}
         <div
           style={{
-            marginTop: "3rem",
-            background: "var(--black)",
-            border: "2px solid var(--teal)",
-            boxShadow: "6px 6px 0 var(--teal)",
-            padding: "1.75rem 2rem",
+            marginTop: "2rem",
+            border: "2px solid var(--black)",
+            background: "var(--off)",
+            boxShadow: "4px 4px 0 var(--black)",
+            padding: "1.5rem 2rem",
             display: "flex",
-            gap: "3rem",
-            flexWrap: "wrap",
             alignItems: "center",
+            gap: "1.5rem",
+            flexWrap: "wrap",
           }}
         >
           <div
             style={{
+              background: "var(--teal)",
+              color: "var(--white)",
               fontFamily: "var(--font-display)",
-              fontSize: "0.7rem",
-              letterSpacing: "0.2em",
+              fontSize: "0.65rem",
+              letterSpacing: "0.15em",
               textTransform: "uppercase",
-              color: "var(--teal)",
+              padding: "0.5rem 1rem",
+              border: "2px solid var(--black)",
+              boxShadow: "3px 3px 0 var(--black)",
+              whiteSpace: "nowrap",
             }}
           >
-            Certified By
+            Currently
           </div>
-          {["Cisco", "Amazon Web Services"].map((org) => (
-            <div
-              key={org}
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "0.85rem",
-                color: "var(--white)",
-                padding: "0.4rem 1rem",
-                border: "1.5px solid rgba(248,244,239,0.2)",
-              }}
-            >
-              {org}
-            </div>
-          ))}
-          <div style={{ marginLeft: "auto", textAlign: "right" }}>
-            <div
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "2rem",
-                fontWeight: 700,
-                color: "var(--gold)",
-                lineHeight: 1,
-              }}
-            >
-              {certifications.length}
-            </div>
-            <div
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "0.65rem",
-                letterSpacing: "0.15em",
-                textTransform: "uppercase",
-                color: "rgba(248,244,239,0.5)",
-              }}
-            >
-              Total Certs
-            </div>
+          <div style={{ fontSize: "0.95rem", color: "#2a2a2a" }}>
+            Pursuing B.Tech at VIT-AP (2023–2027) — actively seeking Summer
+            2026 internships in Full Stack Development and Fintech domains.
           </div>
         </div>
       </div>
